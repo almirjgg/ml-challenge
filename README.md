@@ -1,6 +1,6 @@
-# Challenge Técnico Frontend - Mercado Libre
+# Challenge Técnico - Mercado Libre
 
-Este repositorio contiene la solución al challenge técnico para la posición de Frontend Developer en Mercado Libre. La aplicación es una simulación simplificada del flujo de búsqueda de productos, mostrando una lista de resultados y el detalle de un producto específico.
+La aplicación es una simulación simplificada del flujo de búsqueda de productos, mostrando una lista de resultados y el detalle de un producto específico.
 
 ## Estructura del Proyecto: Monorepo
 
