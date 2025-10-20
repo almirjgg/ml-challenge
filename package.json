@@ -1,0 +1,19 @@
+{
+  "name": "meli-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "main/*"
+  ],
+  "scripts": {
+    "start:api": "cd main/api && npm run dev",
+    "start:front": "cd main/front && npm run dev",
+    "start": "concurrently \"npm:start:api\" \"npm:start:front\"",
+    "test:front": "cd main/front && npm test",
+    "test:api": "echo \"Tests for API not implemented yet.\"",
+    "test": "concurrently \"npm:test:api\" \"npm:test:front\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

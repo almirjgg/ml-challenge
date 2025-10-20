@@ -1,0 +1,40 @@
+.product-detail-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.6rem;
+  background-color: $background-gray;
+  min-height: calc(100vh - 150px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  @include media-breakpoint-down(md) {
+    padding: 1.6rem;
+  }
+
+  .breadcrumb {
+    margin-bottom: 1.6rem;
+  }
+
+  .product-detail-view {
+    background-color: $white;
+    border-radius: $border-radius-lg;
+    box-shadow: $box-shadow-soft;
+    padding: 3.2rem;
+
+    @include media-breakpoint-down(md) {
+      padding: 2rem;
+    }
+  }
+
+  // Estados: carga, error o sin resultados
+  .loader,
+  .error,
+  .no-results {
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 1.8rem;
+    color: $medium-gray;
+  }
+}

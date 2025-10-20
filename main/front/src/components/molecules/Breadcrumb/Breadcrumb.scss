@@ -1,0 +1,27 @@
+.breadcrumb-nav {
+  padding: 16px 0;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  color: $medium-gray;
+  font-size: 14px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      font-weight: bold;
+      color: $dark-gray;
+    }
+  }
+
+  &__separator {
+    margin: 0 8px;
+    color: $light-gray;
+  }
+}

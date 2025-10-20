@@ -1,0 +1,24 @@
+.not-found {
+  background-color: $white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  color: $medium-gray;
+
+  &__title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: $dark-gray;
+    margin-bottom: 1rem;
+  }
+
+  &__message {
+    font-size: 1.6rem;
+  }
+}

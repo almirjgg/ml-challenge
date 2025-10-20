@@ -1,0 +1,33 @@
+// -------------------------------------------
+// Variables personalizadas del proyecto
+// -------------------------------------------
+
+// Colores base
+$primary: #ffe600;
+$light: #eeeeee;
+$secondary: #999999;
+
+$dark-gray: #333333;
+
+$background-gray: #fafafa;
+$medium-gray: #999999;
+$light-gray: #cccccc;
+$white: #ffffff;
+$primary-blue: #007bff;
+
+// Tipografía
+$font-family-sans-serif: 'Roboto', Arial, Helvetica, sans-serif;
+
+// Sombras y bordes
+$box-shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.1);
+$border-radius-lg: 1.2rem;
+
+// Breakpoints personalizados (opcional)
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);

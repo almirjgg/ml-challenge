@@ -1,0 +1,106 @@
+.product-detail-view {
+  background-color: $white;
+  border-radius: 0.8rem;
+  padding: 3.2rem;
+  box-shadow: $box-shadow-soft;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  &__main {
+    display: flex;
+    align-items: flex-start;
+    gap: 3.2rem;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    flex: 1 1 60%;
+    max-width: 680px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0.8rem;
+    background-color: $background-gray;
+  }
+
+  &__info {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__condition-sold {
+    font-size: 1.4rem;
+    color: $secondary;
+    margin-bottom: 0.4rem;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: $dark-gray;
+    line-height: 1.2;
+  }
+
+  &__price {
+    font-size: 4rem;
+    font-weight: 400;
+    color: $dark-gray;
+    margin-bottom: 1.6rem;
+  }
+
+  .btn--primary {
+    background-color: $primary-blue;
+    color: $dark-gray;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    border-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: darken($primary-blue, 5%);
+    }
+
+    &:active {
+      background-color: darken($primary-blue, 10%);
+    }
+  }
+
+  &__description {
+    border-top: 1px solid $light-gray;
+    padding-top: 3.2rem;
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      font-weight: 500;
+      color: $dark-gray;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: $medium-gray;
+      white-space: pre-wrap;
+      word-break: break-word;
+      line-height: 1.6;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-top: 2.4rem;
+    }
+  }
+}

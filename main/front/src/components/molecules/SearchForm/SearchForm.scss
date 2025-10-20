@@ -1,0 +1,46 @@
+.searchbox {
+  display: flex;
+  flex-grow: 1;
+  height: 39px; // Altura estándar de la barra de búsqueda
+
+  &__input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    padding: 0 15px;
+    font-size: 1.8rem;
+    color: $dark-gray;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $secondary;
+    }
+  }
+
+  &__button {
+    width: 46px;
+    height: 100%;
+    background: $light;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #ccc;
+
+    svg {
+      width: 18px;
+      height: 18px;
+      fill: $medium-gray;
+    }
+
+    &:hover {
+      background: darken($light, 3%);
+    }
+  }
+}
