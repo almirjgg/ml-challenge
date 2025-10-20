@@ -24,7 +24,12 @@ Sigue estos pasos para levantar el entorno de desarrollo completo.
 
 ### 1\. Instalación
 
-Clona el repositorio y, desde la carpeta raíz del proyecto (`Ml/`), ejecuta el siguiente comando. Este instalará todas las dependencias tanto del proyecto raíz como de los workspaces (`api` y `front`) de una sola vez.
+Clona el repositorio 
+```
+git clone https://github.com/almirjgg/ml-challenge
+
+```
+y, desde la carpeta raíz del proyecto (`Ml/`), ejecuta el siguiente comando. Este instalará todas las dependencias tanto del proyecto raíz como de los workspaces (`api` y `front`) de una sola vez.
 
 ```
 npm install
