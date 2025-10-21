@@ -6,6 +6,19 @@ La aplicación es una simulación simplificada del flujo de búsqueda de product
 
 Este proyecto está configurado como un **monorepo** utilizando **npm Workspaces**. Esta estructura fue elegida para centralizar la gestión de ambos proyectos (frontend y backend) en un solo repositorio, facilitando la instalación de dependencias, la ejecución de comandos y un futuro despliegue.
 
+Arquitectura
+------------
+
+El monorepo contiene dos paquetes principales:
+
+-   `main/api`: Un servidor backend en **Node.js con Express**.
+
+    -   **Arquitectura Hexagonal (Ports and Adapters):** El backend sigue la **Arquitectura Hexagonal** para asegurar una clara separación de las preocupaciones. Esto permite que la **lógica de negocio** (dominio) sea **independiente** de las tecnologías externas (como la base de datos o el *framework* web). El dominio interactúa con el exterior a través de **Puertos** (interfaces) y los **Adaptadores** implementan estas interfaces para conectarse a servicios específicos (como la API de datos mockeados en este caso).
+
+-   `main/front`: La aplicación cliente desarrollada en **React con Vite y TypeScript**.
+
+    -   **Atomic Design:** El frontend está basado en la metodología **Atomic Design**. Esto organiza la interfaz de usuario en una jerarquía de componentes reutilizables: **Átomos**, **Moléculas**, **Organismos**, **Plantillas** y **Páginas**, promoviendo la consistencia, la escalabilidad y la fácil composición de nuevas interfaces.
+
 El monorepo contiene dos paquetes principales:
 
 - `main/api`: Un servidor backend en **Node.js con Express**, encargado de servir los datos mockeados.
